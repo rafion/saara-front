@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Ponto de Inflexão",
+    "price": 99.99,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/41Odhs226UL.jpg",
+    "inStock": "Disponível"
+  },
+  {
+    "id": 2,
+    "name": "O Inimigo de Deus",
+    "price": 89.99,
+    "image": "https://m.media-amazon.com/images/I/61Irl19OoCL.jpg",
+    "inStock": "Disponível"
+  },
+  {
+    "id": 3,
+    "name": "Antifrágil",
+    "price": 75.55,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/31IE8fI0xBL._SX346_BO1,204,203,200_.jpg",
+    "inStock": "Indisponível"
+  },
+  {
+    "id": 4,
+    "name": "Moby Dick",
+    "price": 80.99,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/51q8KhlSkFL._SY344_BO1,204,203,200_QL70_ML2_.jpg",
+    "inStock": "Disponível"
+  },
+  {
+    "id": 5,
+    "name": "Pai Rico Pai Pobre",
+    "price": 110.25,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/51u2E5fNq8L._SX301_BO1,204,203,200_.jpg",
+    "inStock": "Indisponível"
+  },
+  {
+    "id": 6,
+    "name": "Pinóquio",
+    "price": 50.99,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/51TaFOWCL4L._SY344_BO1,204,203,200_QL70_ML2_.jpg",
+    "inStock": "Disponível"
+  },
+  {
+    "id": 7,
+    "name": "O Rei do Inverno",
+    "price": 65.75,
+    "image": "https://m.media-amazon.com/images/I/617Nqch65UL.jpg",
+    "inStock": "Disponível"
+  },
+  {
+    "id": 8,
+    "name": "Slash: Autobiografia",
+    "price": 110.55,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/51qMElGc5NL._SY344_BO1,204,203,200_QL70_ML2_.jpg",
+    "inStock": "Disponível"
+  }
+]

@@ -6,7 +6,8 @@ main {
 }
 
 .home-container {
-  width: 75vw;
+  width: 85vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,23 +16,26 @@ main {
 
 .home-container .carousel {
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden;
   scroll-behavior: smooth;
-  max-width: 20rem;
+  width: 90%;
 }
 
 .home-container .carousel .item {
   background-color: #fff;
-  margin: 10px;
+  margin: 10px 25px;
   padding: 16px;
-  width: 280px;
-  border-radius: 40px;
+  width: 220px;
+  border-radius: 20px;
+  flex: none;
 }
 
 .home-container .carousel .item img {
   width: 100%;
-  height: 100%;
+  height: 300px;
+  max-height: 320px;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .home-container .carousel .item .info {
@@ -50,9 +54,10 @@ main {
 }
 
 .home-container .carousel .item .info .name {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
   margin: 10px 0;
+  cursor:pointer;
 }
 
 .home-container .carousel .item .info .price {
@@ -62,5 +67,23 @@ main {
   margin-bottom: 10px;
 }
 
+.unavailable {
+  text-decoration: line-through;
+}
 
+.buttons {
+  margin-top: 18px;
+  text-align: center;
+}
 
+.buttons button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.buttons button:last-child img{
+  transform: rotate(180deg);
+}
