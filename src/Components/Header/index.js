@@ -4,13 +4,15 @@ import Logo from '../../assets/logo.png'
 import Cart from '../../assets/shopping-cart1.svg'
 import User from '../../assets/user1.svg'
 import Search from '../../assets/search1.svg'
-
+import { Link } from 'react-router-dom';
 
 export function Header(){
   return(
     <div className="container">
       <header className="header-nav">
-        <img src={Logo} alt="Logo" />
+        <Link to="/">
+          <img src={Logo} alt="Logo" />
+        </Link>
         <div className="input-group">
           <div className="search-group">
             <input type="text" className="input-search"/>
@@ -20,20 +22,20 @@ export function Header(){
           </div>
           <div className="check-list">
             <div className="check-group">
-              <input type="checkbox" id="All" />
-              <p>Todos</p>
+              <input type="checkbox" id="all" />
+              <label htmlFor="all">Todos</label>
             </div>
             <div className="check-group">
-              <input type="checkbox" id="Book" />
-              <p>Livro</p>
+              <input type="checkbox" id="book_id" />
+              <label htmlFor="book_id">Livro</label>
             </div>
             <div className="check-group">  
-              <input type="checkbox" id="Author" />
-              <p>Autor</p>
+              <input type="checkbox" id="author_id" />
+              <label htmlFor="author_id">Autor</label>
             </div>
             <div className="check-group">  
-              <input type="checkbox" id="Publisher" />
-              <p>Editora</p>
+              <input type="checkbox" id="publisher_id" />
+              <label htmlFor="publisher_id">Editora</label>
             </div>
           </div>
         </div>
