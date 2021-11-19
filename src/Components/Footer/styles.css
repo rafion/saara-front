@@ -1,12 +1,13 @@
 .footer-container {
   width: 100%;
-  min-height: 10vh;
+  height: 16vh;
   display: flex;
   flex-direction: row;
   background-color: #c4c4c4;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: auto;
 }
 
 .footer-container .content {
@@ -21,4 +22,8 @@
 .footer-container .content img {
   width: 160px;
   height: 70px;
+}
+
+.content span {
+  font-weight: 700;
 }

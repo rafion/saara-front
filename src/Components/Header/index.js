@@ -41,7 +41,7 @@ export function Header(){
         </div>
         <div className="register-login">
           <img src={User} alt="User" />
-          <p>Entre ou cadastre-se</p>
+          <Link to="/login">Entre ou cadastre-se</Link>
         </div>
         <img src={Cart} alt="Shopping cart" />
       </header>
