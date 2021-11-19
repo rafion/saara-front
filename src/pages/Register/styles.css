@@ -1,0 +1,84 @@
+#page-register {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #fff;
+  justify-content: flex-start;
+}
+
+.register-title {
+  margin-top: 16px;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: left;
+}
+
+#page-register .register-content {
+  padding: 10px;
+  width: 350px;
+  height: 530px;
+  border: 1px solid #dddddd;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.register-group {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register-group input {
+  height: 31px;
+  width: 80%;
+  padding: 3px 7px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+
+.register-group .email-label,
+.register-group .password-label,
+.register-group .name-label,
+.register-group .password-repeat-label {
+  font-size: 14px;
+  align-self: flex-start;
+  margin-left: 34px;
+  margin-bottom: 10px;
+}
+
+.register-group label + input {
+  margin-bottom: 30px;
+}
+
+.register-btn {
+  width: 80%;
+  height: 40px;
+  border-radius: 3px;
+  color: #000;
+  background-color: #ffdd00;
+  border: 1px solid #e2e2e2;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  transition: 400ms;
+}
+
+.register-btn:hover {
+  background-color: #eccd00;
+}
+
+.bottom-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-group p {
+  margin-top: 20px;
+}
+
+.bottom-group a {
+}

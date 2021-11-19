@@ -34,7 +34,7 @@ export function Home() {
       <Header />
       <main>
         <div className="home-container">
-          <h1>Novidades</h1>
+          <h1 className="main-title">Novidades</h1>
           <div className="carousel" ref={carousel}>
             {carouselData.map((item) => {
               const { id, name, price, image, inStock } = item;
