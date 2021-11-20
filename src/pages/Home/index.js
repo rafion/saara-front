@@ -33,7 +33,7 @@ export function Home() {
     <div id="page-home">
       <Header />
       <main>
-        <div className="home-container">
+        <div className="news-container">
           <h1 className="main-title">Novidades</h1>
           <div className="carousel" ref={carousel}>
             {carouselData.map((item) => {
@@ -67,6 +67,7 @@ export function Home() {
             </button>
           </div>
         </div>
+        <div className="separator"></div>
       </main>
       <Footer />
     </div>

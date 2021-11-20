@@ -1,37 +1,49 @@
-#page-login {
+#page-address {
   display: flex;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 30px;
   height: 100vh;
   flex-direction: column;
   background-color: #fff;
+  justify-content: flex-start;
 }
 
-.login-title {
+.back {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.back img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.address-title {
   font-size: 25px;
   font-weight: 400;
   text-align: left;
 }
 
-#page-login .login-content {
+#page-address .address-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 20px;
-  width: 350px;
-  height: 380px;
+  width: 1000px;
+  height: 450px;
   border: 1px solid #dddddd;
   background-color: #fff;
   border-radius: 4px;
 }
 
-.login-group {
+.address-group {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.login-group input {
+.address-group input {
   height: 31px;
   width: 80%;
   padding: 3px 7px;
@@ -39,18 +51,21 @@
   border-radius: 4px;
 }
 
-.login-group .email-label,
-.login-group .password-label {
+.address-group .email-label,
+.address-group .password-label,
+.address-group .name-label,
+.address-group .password-repeat-label {
+  font-size: 14px;
   align-self: flex-start;
   margin-left: 34px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
-.login-group label + input {
+.address-group label + input {
   margin-bottom: 30px;
 }
 
-.login-btn {
+.address-btn {
   width: 80%;
   height: 40px;
   border-radius: 3px;
@@ -63,7 +78,7 @@
   transition: 400ms;
 }
 
-.login-btn:hover {
+.address-btn:hover {
   background-color: #eccd00;
 }
 
@@ -76,4 +91,7 @@
 
 .bottom-group p {
   margin-top: 20px;
+}
+
+.bottom-group a {
 }

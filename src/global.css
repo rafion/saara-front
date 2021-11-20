@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 body {
@@ -13,4 +12,5 @@ body {
   color: #1e1e1e;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }

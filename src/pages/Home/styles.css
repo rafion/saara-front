@@ -11,23 +11,23 @@ main {
   letter-spacing: 3px;
 }
 
-.home-container {
+.news-container {
   width: 85vw;
-  height: 100vh;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.home-container .carousel {
+.news-container .carousel {
   display: flex;
   overflow-x: hidden;
   scroll-behavior: smooth;
   width: 90%;
 }
 
-.home-container .carousel .item {
+.news-container .carousel .item {
   background-color: #fff;
   margin: 10px 25px;
   padding: 16px;
@@ -36,7 +36,7 @@ main {
   flex: none;
 }
 
-.home-container .carousel .item img {
+.news-container .carousel .item img {
   width: 100%;
   height: 300px;
   max-height: 320px;
@@ -44,14 +44,14 @@ main {
   cursor: pointer;
 }
 
-.home-container .carousel .item .info {
+.news-container .carousel .item .info {
   height: 140px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.home-container .carousel .item .info span {
+.news-container .carousel .item .info span {
   display: block;
   text-align: center;
   color: #1e1e1e;
@@ -59,14 +59,14 @@ main {
   border-radius: 10px;
 }
 
-.home-container .carousel .item .info .name {
+.news-container .carousel .item .info .name {
   font-size: 1.2rem;
   font-weight: 700;
   margin: 10px 0;
   cursor: pointer;
 }
 
-.home-container .carousel .item .info .price {
+.news-container .carousel .item .info .price {
   font-size: 1.3rem;
   font-weight: 400;
   background-color: #ffdd00;

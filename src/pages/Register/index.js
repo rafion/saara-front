@@ -1,12 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles.css';
 import { Footer } from '../../Components/Footer';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 export function Register() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const history = useHistory();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const isValid = verifyPassword(password);
+    console.log(isValid);
+    if (isValid) {
+      console.log('chegou');
+      history.push('/address', { email, password });
+    }
+  }
+
+  function verifyPassword(passwd) {
+    return passwd.length >= 5;
+  }
+
   return (
     <div id="page-register">
-      <form className="register-content">
+      <form className="register-content" onSubmit={handleSubmit}>
         <h1 className="register-title">Criar conta</h1>
         <div className="register-group">
           <label htmlFor="name-input" className="name-label" required>
@@ -23,27 +42,25 @@ export function Register() {
             placeholder="Ex: joao@email.com"
             required
             maxLength="100"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
           <label htmlFor="password-input" className="password-label" required>
             Senha
           </label>
-          <input type="password" name="password" id="password-input" required />
-          <label
-            htmlFor="password-confirm-input"
-            className="password-repeat-label"
-            required
-          >
-            Digite novamente a senha
-          </label>
           <input
             type="password"
             name="password"
-            id="password-confirm-input"
+            id="password-input"
             required
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
         </div>
         <div className="bottom-group">
-          <input type="submit" value="Cadastrar" className="register-btn" />
+          <button type="submit" className="register-btn">
+            Continuar
+          </button>
           <p>
             Já possui conta ? <Link to="/login">Fazer login</Link>
           </p>

@@ -1,7 +1,7 @@
 #page-register {
   display: flex;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 30px;
   height: 100vh;
   flex-direction: column;
   background-color: #fff;
@@ -9,16 +9,18 @@
 }
 
 .register-title {
-  margin-top: 16px;
   font-size: 25px;
   font-weight: 400;
   text-align: left;
 }
 
 #page-register .register-content {
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
   width: 350px;
-  height: 530px;
+  height: 450px;
   border: 1px solid #dddddd;
   background-color: #fff;
   border-radius: 4px;
@@ -45,7 +47,7 @@
   font-size: 14px;
   align-self: flex-start;
   margin-left: 34px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .register-group label + input {
