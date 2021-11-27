@@ -5,16 +5,20 @@ import { Footer } from '../../Components/Footer';
 import LeftArrow from '../../assets/icons/left-arrow.svg';
 import RightArrow from '../../assets/icons/left-arrow.svg';
 
+import api from '../../api';
+
 import './styles.css';
 
 export function Home() {
-  const [carouselData, setCarouselData] = useState([]);
+  const [books, setBooks] = useState([]);
   const carousel = useRef(null);
 
   useEffect(() => {
-    fetch('http://localhost:3000/static/books.json')
-      .then((response) => response.json())
-      .then(setCarouselData);
+    api.get('livros').then((res) => {
+      const books = res.data;
+      console.log(books);
+      setBooks(books);
+    });
   }, []);
 
   const handleLeftClick = (e) => {
@@ -27,7 +31,7 @@ export function Home() {
     carousel.current.scrollLeft += carousel.current.offsetWidth;
   };
 
-  if (!carouselData || !carouselData.length) return null;
+  if (!books || !books.length) return null;
 
   return (
     <div id="page-home">
@@ -36,23 +40,21 @@ export function Home() {
         <div className="news-container">
           <h1 className="main-title">Novidades</h1>
           <div className="carousel" ref={carousel}>
-            {carouselData.map((item) => {
-              const { id, name, price, image, inStock } = item;
+            {books.map((item) => {
+              const { id, titulo, precoUnitario } = item;
               return (
                 <div className="item" key={id}>
                   <div className="image">
-                    <img src={image} alt="Book" />
+                    <img
+                      src={
+                        'https://m.media-amazon.com/images/I/61Irl19OoCL.jpg'
+                      }
+                      alt="Book"
+                    />
                   </div>
                   <div className="info">
-                    <span className="name">{name}</span>
-                    <span className="price">R${price}</span>
-                    <span
-                      className={`inStock ${
-                        inStock === 'Indisponível' ? 'unavailable' : ''
-                      }`}
-                    >
-                      {inStock}
-                    </span>
+                    <span className="name">{titulo}</span>
+                    <span className="price">R${precoUnitario}</span>
                   </div>
                 </div>
               );
