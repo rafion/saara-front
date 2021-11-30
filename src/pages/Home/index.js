@@ -41,20 +41,20 @@ export function Home() {
           <h1 className="main-title">Novidades</h1>
           <div className="carousel" ref={carousel}>
             {books.map((item) => {
-              const { id, titulo, precoUnitario } = item;
+              const { id, titulo, precoUnitario, autor, url_img } = item;
+              console.log('item', item);
               return (
                 <div className="item" key={id}>
                   <div className="image">
                     <img
-                      src={
-                        'https://m.media-amazon.com/images/I/61Irl19OoCL.jpg'
-                      }
+                      src={url_img}
                       alt="Book"
                     />
                   </div>
                   <div className="info">
                     <span className="name">{titulo}</span>
                     <span className="price">R${precoUnitario}</span>
+                    <span className="sub-name">Autor: {autor}</span>
                   </div>
                 </div>
               );
