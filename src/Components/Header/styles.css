@@ -77,3 +77,12 @@
   font-weight: 400;
   margin-left: 8px;
 }
+
+.logo-title, a {
+  
+  color: #0e0d0d;
+  padding: 14px 25px;
+  text-decoration: inherit;
+  font-family: "Ropa Soft", cursive;
+  letter-spacing: 3px;
+}
