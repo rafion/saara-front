@@ -11,7 +11,9 @@ export function Header() {
     <div className="header-container">
       <header className="header-nav">
         <Link to="/">
+        
           <h1 className='logo-title'>Livraria Saara</h1>
+
         </Link>
         <div className="input-group">
           <div className="search-group">
